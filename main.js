@@ -5,6 +5,7 @@ const txt =
 
 let number = 0;
 let indexTyping;
+const time = 40;
 
 const addLetter = () => {
   spnText.textContent += txt[number];
@@ -15,5 +16,5 @@ const addLetter = () => {
 };
 
 btn.addEventListener("click", () => {
-  indexTyping = setInterval(addLetter, 50);
+  indexTyping = setInterval(addLetter, time);
 });
